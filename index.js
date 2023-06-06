@@ -1,17 +1,36 @@
 let count=0
-function increment(){
+let adder=document.getElementById("increment-btn")
+let saver=document.getElementById("save-btn")
+
+adder.addEventListener("click",function() {
     count=count+1
     document.getElementById("count").innerText= count
-    console.log(count);
+    
     if (count==30){
         document.getElementById("people").innerText="BALA"
-    }  
-}  
+    } 
 
-function save(){
-    
+})
+
+saver.addEventListener("click",function(){
     document.getElementById("saved").innerText+=" " + count+" - "
-}
+})
+
+
+
+// function increment(){
+//     count=count+1
+//     document.getElementById("count").innerText= count
+    
+//     if (count==30){
+//         document.getElementById("people").innerText="BALA"
+//     }  
+// }  
+
+// function save(){
+    
+//     document.getElementById("saved").innerText+=" " + count+" - "
+// }
   
 
 // counting---
