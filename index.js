@@ -5,16 +5,21 @@ function increment(){
     console.log(count);
     if (count==30){
         document.getElementById("people").innerText="BALA"
-}  
+    }  
 }  
 
 function save(){
     
     document.getElementById("saved").innerText+=" " + count+" - "
-
-
 }
   
+
+// counting---
+
+// for(let i=0;i<4000;i++){
+//     count+=count
+//     document.getElementById("count").innerText= i
+// }
 //document.getElementById("count").innerText=10;
 
 // let count=0;
